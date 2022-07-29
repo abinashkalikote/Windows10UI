@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.1s;
+    user-select: none;
+    font-family: arial;
+  }
+
+  :root {
+    --backgroundColor: rgb(29 44 64);
+    --defaultheight: 5vh;
+  }
+  .taskbar {
+    position: absolute;
+    bottom: 0;
+    height: var(--defaultheight);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--backgroundColor);
+    overflow: hidden;
+  }
+
+  .rightbar {
+    display: flex;
+    align-items: center;
+  }
+
+  .windowicon {
+    height: var(--defaultheight);
+    width: 7.5vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    background-color: var(--backgroundColor);
+  }
+
+  .windowicon:hover{
+      color: rgb(115, 197, 248) !important;
+  }
+
+  .searchbar {
+    height: var(--defaultheight);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    /* border: var(--backgroundColor); */
+    background-color: white;
+    border: 1px solid white;
+  }
+
+  .fa-magnifying-glass {
+    font-size: 1rem;
+    color: rgb(71, 70, 71);
+    transform: rotate(75deg);
+    padding: 2px 5px;
+    padding-right: 10px;
+  }
+
+  .searchbar > input {
+    width: 21.3vw;
+    height: 6.8vh;
+    line-height: 6.8vh;
+    border: var(--backgroundColor);
+    outline: none;
+  }
+
+  .seachbar-border {
+    border: 1px solid rgb(62, 173, 218);
+  }
+
+  ::placeholder {
+    color: rgb(71, 70, 71);
+    font-size: 0.9rem;
+  }
+
+  .pinnedapp > ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+
+  .pinnedapp > ul li {
+    padding: 0.9rem;
+  }
+
+  .pinnedapp > ul li:hover {
+    background-color: rgba(238, 238, 238, 0.1);
+  }
+
+  img {
+    height: 0.9rem;
+    width: 0.9rem;
+    zoom: 160%;
+  }
+
+  img.taskview {
+    filter: invert(2);
+  }
+
+  /* leftbar style is started */
+
+  .leftbar > ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+
+  .leftbar > ul li {
+    font-size: 0.9rem;
+    padding: 0.9rem 0.3rem;
+  }
+
+  .leftbar > ul li:last-child {
+    border-right: 1px solid gray;
+    margin-right: 0.3rem;
+  }
+
+  .leftbar > ul li:hover {
+    background-color: rgba(238, 238, 238, 0.1);
+  }
+
+  .fa-wifi {
+    transform: rotate(320deg);
+  }
+
+  .fa-message {
+    padding: 0.9rem;
+  }
+
+  .datetime {
+    font-size: 0.75rem !important;
+    cursor: default;
+  }
+
+  main {
+    height: 95vh;
+    width: 100vw;
+    background: url("./windows_Wallpaper.png");
+  }
